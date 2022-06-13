@@ -7,7 +7,7 @@ Project for graphics and visualization class.
 Strzałkami obracamy akwarium.
 
 ### Modele:
-Wszystkie modele były pobrane z programu Paint 3d
+Modele rybek oraz roślin były pobrane z programu Paint 3d
 
 ### Tekstury:
 https://www.freepik.com/ <br>
