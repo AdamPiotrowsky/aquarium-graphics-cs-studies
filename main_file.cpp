@@ -187,7 +187,6 @@ void initOpenGLProgram(GLFWwindow* window) {
 	loadModel("algae.glb", algaeVerts, algaeNorms, algaeTexCoords, algaeIndices);
 	loadModel("ryba_test.glb", fishVerts, fishNorms, fishTexCoords, fishIndices);
 	//loadModel("zolw.glb", grassVerts, grassNorms, grassTexCoords, grassIndices);
-	std::cout << "TUTAJ" << std::endl;
 }
 
 //Release resources allocated by the program
@@ -414,12 +413,28 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y) {
 	M1 = glm::scale(M1, glm::vec3(0.02f, 0.02f, 0.02f));
 	drawAlgaeFromM(M1);
 
-	M1 = glm::translate(M, glm::vec3(-0.1f, -1.4f, -0.5f));
+	M1 = glm::translate(M, glm::vec3(-0.7f, -1.4f, -0.5f));
 	M1 = glm::scale(M1, glm::vec3(0.01f, 0.01f, 0.01f));
 	drawAlgaeFromM(M1);
 
-	M1 = glm::translate(M, glm::vec3(-1.3f, -1.4f, -0.1f));
+	M1 = glm::translate(M, glm::vec3(-1.3f, -1.4f, 0.4f));
 	M1 = glm::scale(M1, glm::vec3(0.015f, 0.015f, 0.015f));
+	drawAlgaeFromM(M1);
+
+	M1 = glm::translate(M, glm::vec3(0.1f, -1.4f, 0.4f));
+	M1 = glm::scale(M1, glm::vec3(0.005f, 0.025f, 0.007f));
+	drawAlgaeFromM(M1);
+
+	M1 = glm::translate(M, glm::vec3(-1.8f, -1.4f, -0.7f));
+	M1 = glm::scale(M1, glm::vec3(0.005f, 0.027f, 0.003f));
+	drawAlgaeFromM(M1);
+
+	M1 = glm::translate(M, glm::vec3(0.90f, -1.45f, -0.2f));
+	M1 = glm::scale(M1, glm::vec3(0.025f, 0.001f, 0.025f));
+	drawAlgaeFromM(M1);
+
+	M1 = glm::translate(M, glm::vec3(1.9f, -1.4f, -0.7f));
+	M1 = glm::scale(M1, glm::vec3(0.005f, 0.032f, 0.003f));
 	drawAlgaeFromM(M1);
 
 
